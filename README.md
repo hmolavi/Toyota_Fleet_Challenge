@@ -14,7 +14,7 @@ Note: if you want to use a TurtleBot with a camera, please type `export TURTLEBO
 
 You should see a TurtleBot 3 model spawned in the Gazebo simulator along with a model of the Toyota Innovation Challenge field setup. You can use the TMMC_Wrapper to interface with this simulated robot.
 
-![TIC Field Gazebo](tic_field_gazebo.png)
+![TIC Field Gazebo](assets/tic_field_gazebo.png)
 
 ## Timeline
 
