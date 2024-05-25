@@ -1,0 +1,9 @@
+# Ignore everything in the root directory
+/*
+
+# Except these specific files and folders
+!.gitignore
+!stop_sign_detection_solution.py/
+!TMMC_Wrapper/
+!solution-joystick.py/
+!README.md/
