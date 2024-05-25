@@ -3,7 +3,7 @@
 
 # Except these specific files and folders
 !.gitignore
-!stop_sign_detection_solution.py/
+!stop_sign_detection_solution.py
 !TMMC_Wrapper/
-!solution-joystick.py/
-!README.md/
+!solution-joystick.py
+!README.md
