@@ -1,4 +1,4 @@
-# TMMC_Fleet_Control_Challenge
+# Toyota Hackathon Fleet Control Challenge
 
 ## Description
 This project houses the necessary software, simulation tools and code scaffolding for the TMMC Fleet Control Challenge. The challenge is to navigate TurtleBots in a known manufacturing-like environment (12ft x 12ft field made by the IDEAs Clinic) while avoiding other TurtleBots/obstacles and adhereing to signage on the field.
