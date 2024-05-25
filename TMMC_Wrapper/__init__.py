@@ -136,6 +136,8 @@ class Robot(Node):
 
         self.cmd_vel_publisher = self.create_publisher(Twist, '/cmd_vel', 10)
         self.keyboard_listener = None #temp placeholder for the keyboard listener
+
+        self.manual_mode = False
     
     def get_tf_transform(self,parent_frame,child_frame,wait=True,time_in=rclpy.time.Time()):
         if wait:
@@ -461,6 +463,10 @@ class Robot(Node):
                 ## Custom command to stop robot, just in case
                 if key_char == 'p':
                     self.send_cmd_vel(0, 0)
+
+                ## Custom command to flip between autonomous and manual modes
+                if key_char == 'q':
+                    self.manual_mode != self.manual_mode
 
             def on_release(key):
                 self.send_cmd_vel(0.0, 0.0)
