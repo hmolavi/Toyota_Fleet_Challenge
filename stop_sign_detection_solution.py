@@ -11,7 +11,7 @@ if not rclpy.ok():
     rclpy.init()
 
 # Simulation Mode
-TMMC_Wrapper.is_SIM = True
+TMMC_Wrapper.is_SIM = False
 
 if not TMMC_Wrapper.is_SIM:
     TMMC_Wrapper.use_hardware()
@@ -38,9 +38,12 @@ rclpy.spin_once(robot, timeout_sec=0.1)
 # Run control functions on loop
 try:
     print("Entering the robot loop which cycles until the script is stopped")
+    
     while True:
         # rclpy.spin_once is a function that updates the ros topics once
         rclpy.spin_once(robot, timeout_sec=0.1)
+    
+        robot.checkImageRelease()
 
         # Add looping functionality here
         img_msg = robot.checkImage()

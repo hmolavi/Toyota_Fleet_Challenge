@@ -137,7 +137,11 @@ class Robot(Node):
         self.cmd_vel_publisher = self.create_publisher(Twist, '/cmd_vel', 10)
         self.keyboard_listener = None #temp placeholder for the keyboard listener
 
+        # Enables for switching autonomous and manual control
         self.manual_mode = False
+        
+        # State machine
+        self.state = "Forward"
     
     def get_tf_transform(self,parent_frame,child_frame,wait=True,time_in=rclpy.time.Time()):
         if wait:
@@ -516,16 +520,16 @@ class Robot(Node):
         meas = scan.ranges[ind_start:ind_end]
         total = len(meas)
         meas = [m for m in meas if np.isfinite(m)]
-        print(meas)
-        print(len(meas))
+        # print(meas)
+        # print(len(meas))
         if len(meas) == 0:
             return 0.0
         num_too_close = 0.0
         for m in meas: 
             if m < min_dist: 
-                print(f"m < min dist addition is {m}")
+                # print(f"m < min dist addition is {m}")
                 num_too_close = num_too_close + 1
-        print(float(num_too_close))
+        # print(float(num_too_close))
     
         return float(num_too_close) / total
 

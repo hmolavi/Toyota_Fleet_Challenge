@@ -25,10 +25,9 @@ print("running main")
 
 robot.start_keyboard_control()   #this one is just pure keyboard control
 
-
 #rclpy,spin_once is a function that updates the ros topics once
 rclpy.spin_once(robot, timeout_sec=0.1)
-robot.start_keyboard_control()   #this one is just pure keyboard control
+
 #consts
 #area coverage by lidar in a range of 20 degrees. In Rad
 MinDist = 0.4

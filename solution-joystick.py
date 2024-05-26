@@ -29,6 +29,7 @@ try:
     print("Listening for keyboard events. Press keys to test, Ctrl C to exit")
     while True: 
         rclpy.spin_once(robot, timeout_sec=0.1)
+        # robot.send_cmd_vel(0.2,0.0)
 except KeyboardInterrupt:
     print("keyboard interrupt receieved.Stopping...")
 finally:
