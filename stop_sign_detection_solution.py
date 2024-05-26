@@ -27,7 +27,6 @@ model = YOLO('yolov8n.pt')
 
 # State variables
 stop_sign_detected = False
-manual_override = False
 
 # start processes
 # Used for manual overrides

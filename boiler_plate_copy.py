@@ -42,7 +42,7 @@ try:
     while True:
 
         #rclpy,spin_once is a function that updates the ros topics once
-        rclpy.spin_once(robot, timeout_secaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaad=0.1)
+        rclpy.spin_once(robot, time_out=0.1)
         lidar_data_mesg = robot.checkScan()
         #robot.send_cmd_vel(0.2,0.0)
         
