@@ -1,7 +1,24 @@
+<div align="center">
+  
+</div>
+
 # Toyota Hackathon Fleet Control Challenge
 
 ## Description
 This project houses the necessary software, simulation tools and code scaffolding for the Fleet Control Challenge. The challenge is to navigate TurtleBots in a known manufacturing-like environment (12ft x 12ft field made by the IDEAs Clinic) while avoiding other TurtleBots/obstacles and adhereing to signage on the field.
+
+**The challenge** was to complete the following stages:
+  1. Control TurtleBots with Joystick  
+  2. Read and monitor inputs from the camera and IR sensors  
+  3. Detect and yield Stop signs  
+  4. Navigate the course, complete one lap  
+  5. Fleet management for multiple TurtleBots  
+
+Results: Only group to complete all 5 stages of the challenge
+
+The image above shows the TurtleBots provided to us by IDEAs Clinic Center
+
+
 
 ## Getting Started
 
