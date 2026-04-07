@@ -30,7 +30,7 @@ Given the short duration of the challenge we had difficulties integrating the PI
 
 ## Our Demo
 
-![demo_video](https://github.com/user-attachments/assets/5bf2fab9-0f17-475c-82e7-2551f6efaa14)
+https://github.com/user-attachments/assets/5bf2fab9-0f17-475c-82e7-2551f6efaa14
 
 ## Getting Started
 
